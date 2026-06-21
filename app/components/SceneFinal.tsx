@@ -8,8 +8,8 @@ export default function SceneFinal({ onReplay }: { onReplay: () => void }) {
   const [phase, setPhase] = useState(0);
   const [displayed, setDisplayed] = useState("");
   const [showReplay, setShowReplay] = useState(false);
-  const intervalsRef = useRef<ReturnType<typeof setInterval>[]>([]);
-  const timersRef = useRef<ReturnType<typeof setTimeout>[]>([]);
+  const intervalsRef = useRef<number[]>([]);
+  const timersRef = useRef<number[]>([]);
 
   useEffect(() => {
     // phase 1: card slides in

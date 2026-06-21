@@ -338,4 +338,4 @@ export default function SceneFinal({ onReplay }: { onReplay: () => void }) {
       </div>
     </>
   );
-}
+} 
